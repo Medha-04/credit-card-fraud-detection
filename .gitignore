@@ -1,0 +1,13 @@
+# Ignore Dataset 
+creditcard.csv
+
+
+.ipynb_checkpoints/
+
+
+__pycache__/
+
+
+.venv/
+env/
+
