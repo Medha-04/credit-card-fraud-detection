@@ -85,8 +85,8 @@ Demonstrated trade-off between recall and precision for fraud detection
 
 ## Key Insights
 
-Accuracy alone is misleading for fraud detection
-PR-AUC is more informative than ROC-AUC under heavy imbalance
-Class weighting is a strong baseline and often competitive with resampling
-SMOTE can help linear models but may introduce noise in high dimensions
-Threshold tuning is critical for real-world deployment
+- Accuracy alone is misleading for fraud detection
+- PR-AUC is more informative than ROC-AUC under heavy imbalance
+- Class weighting is a strong baseline and often competitive with resampling
+- SMOTE can help linear models but may introduce noise in high dimensions
+- Threshold tuning is critical for real-world deployment
