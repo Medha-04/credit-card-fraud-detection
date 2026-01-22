@@ -2,13 +2,10 @@
 
 **Project Overview**
 This project focuses on detecting fraudulent credit card transactions using machine learning under extreme class imbalance conditions. Fraudulent transactions represent only ~0.17% of all observations, making accuracy an unreliable metric.
-
 The goal is to build and evaluate models that prioritize the minority (fraud) class, using appropriate preprocessing, resampling strategies, and evaluation metrics.
 
 **Dataset**
-
 Source: Kaggle – Credit Card Fraud Detection
-
 Link: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
 Description:
@@ -59,7 +56,6 @@ ROC-AUC
 Tuned classification thresholds based on F1 score
 Demonstrated trade-off between recall and precision for fraud detection
 
-
 **Results**
 
 | Model | PR-AUC |
@@ -69,7 +65,6 @@ Demonstrated trade-off between recall and precision for fraud detection
 | Logistic Regression (class-weighted) | 0.72 |
 
 **Key Insights**
-
 - Accuracy alone is misleading for fraud detection
 - PR-AUC is more informative than ROC-AUC under heavy imbalance
 - Class weighting is a strong baseline and often competitive with resampling
