@@ -12,21 +12,15 @@ Source: Kaggle – Credit Card Fraud Detection
 Link: https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud
 
 Description:
-
 European cardholder transactions from 2013
-
 284,807 transactions
-
 492 fraud cases (highly imbalanced)
-
 Features V1–V28 are PCA-transformed for confidentiality
-
 Time and Amount are raw, unscaled features
 
 Note: The dataset is not included in this repository due to size and licensing constraints.
 
 **Key Challenges**
-
 - Severe class imbalance (~1 fraud per 600 transactions)
 - High cost of false negatives (missed fraud)
 - Accuracy is misleading
@@ -39,24 +33,20 @@ Note: The dataset is not included in this repository due to size and licensing c
 - Identified need for robust scaling due to skew and outliers
 
 2. Feature Scaling
-
 - Applied RobustScaler to Time and Amount
 - PCA features were already standardized by dataset design
 
 3. Baseline Modeling
-
 - Logistic Regression with class_weight='balanced'
 - Established a reference point for recall and precision on fraud cases
 
 4. Handling Class Imbalance
-
 Compared multiple strategies:
 - Class-weighted Logistic Regression
 - SMOTE (Synthetic Minority Oversampling) + Logistic Regression
 - Random Forest with balanced subsampling
 
 5. Model Evaluation
-
 Used metrics appropriate for imbalanced classification:
 
 Precision
@@ -66,7 +56,6 @@ PR-AUC (Primary metric)
 ROC-AUC
 
 6. Threshold Optimization
-
 Tuned classification thresholds based on F1 score
 Demonstrated trade-off between recall and precision for fraud detection
 
